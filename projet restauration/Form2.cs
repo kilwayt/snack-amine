@@ -10,35 +10,14 @@ using System.Windows.Forms;
 
 namespace projet_restauration
 {
-    public partial class loading : Form
+    public partial class Form2 : Form
     {
-        public loading()
+        public Form2()
         {
             InitializeComponent();
-            pbar.Value = 0;
-
         }
 
-        private void pbar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            pbar.Value += 4;
-            pbar.Text = pbar.Value.ToString() + "%";
-            if (pbar.Value == 100)
-            {
-                timer1.Stop();
-                this.Hide();
-                mainmenu main = new mainmenu();
-                main.Show();
-
-            }
-        }
-
-        private void loading_Load(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }

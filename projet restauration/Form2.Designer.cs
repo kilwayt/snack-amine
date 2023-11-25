@@ -1,7 +1,6 @@
-﻿
-namespace projet_restauration
+﻿namespace projet_restauration
 {
-    partial class loading
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,66 +28,20 @@ namespace projet_restauration
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pbar = new CircularProgressBar.CircularProgressBar();
             this.SuspendLayout();
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // pbar
-            // 
-            this.pbar.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.pbar.AnimationSpeed = 500;
-            this.pbar.BackColor = System.Drawing.Color.Transparent;
-            this.pbar.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
-            this.pbar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pbar.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.pbar.InnerMargin = 2;
-            this.pbar.InnerWidth = -1;
-            this.pbar.Location = new System.Drawing.Point(200, 57);
-            this.pbar.MarqueeAnimationSpeed = 2000;
-            this.pbar.Name = "pbar";
-            this.pbar.OuterColor = System.Drawing.SystemColors.GrayText;
-            this.pbar.OuterMargin = -25;
-            this.pbar.OuterWidth = 26;
-            this.pbar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(186)))), ((int)(((byte)(242)))));
-            this.pbar.ProgressWidth = 15;
-            this.pbar.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.pbar.Size = new System.Drawing.Size(320, 320);
-            this.pbar.StartAngle = 270;
-            this.pbar.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.pbar.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.pbar.SubscriptText = "";
-            this.pbar.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.pbar.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.pbar.SuperscriptText = "";
-            this.pbar.TabIndex = 0;
-            this.pbar.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.pbar.Value = 68;
-            this.pbar.Click += new System.EventHandler(this.pbar_Click);
-            // 
-            // loading
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pbar);
-            this.Name = "loading";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "Form2";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.loading_Load);
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Timer timer1;
-        private CircularProgressBar.CircularProgressBar pbar;
     }
 }
